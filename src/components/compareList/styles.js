@@ -3,8 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 25px;
 `;
 
 export const Repository = styled.div`
@@ -14,11 +17,13 @@ export const Repository = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 12px;
+  margin-bottom: 20px;
 
   header {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    flex: 1 1;
     align-items: center;
 
     img {
@@ -58,6 +63,7 @@ export const Repository = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex: 1 1;
 
       .update {
         height: 25px;
